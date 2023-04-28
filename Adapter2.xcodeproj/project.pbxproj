@@ -13,6 +13,11 @@
 		132CCF5529FC06F500F1C877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132CCF5329FC06F500F1C877 /* Main.storyboard */; };
 		132CCF5729FC06F900F1C877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132CCF5629FC06F900F1C877 /* Assets.xcassets */; };
 		132CCF5A29FC06F900F1C877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132CCF5829FC06F900F1C877 /* LaunchScreen.storyboard */; };
+		132CCF6229FC079400F1C877 /* Google Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132CCF6129FC079400F1C877 /* Google Authenticator.swift */; };
+		132CCF6429FC09CB00F1C877 /* Twitter Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132CCF6329FC09CB00F1C877 /* Twitter Authenticator.swift */; };
+		132CCF6729FC0A3400F1C877 /* Auth Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132CCF6629FC0A3400F1C877 /* Auth Service.swift */; };
+		132CCF6B29FC0B8900F1C877 /* GoogleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132CCF6A29FC0B8900F1C877 /* GoogleAdapter.swift */; };
+		132CCF6D29FC0B9900F1C877 /* TwitterAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132CCF6C29FC0B9900F1C877 /* TwitterAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		132CCF5629FC06F900F1C877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		132CCF5929FC06F900F1C877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		132CCF5B29FC06F900F1C877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132CCF6129FC079400F1C877 /* Google Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Google Authenticator.swift"; sourceTree = "<group>"; };
+		132CCF6329FC09CB00F1C877 /* Twitter Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Twitter Authenticator.swift"; sourceTree = "<group>"; };
+		132CCF6629FC0A3400F1C877 /* Auth Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Auth Service.swift"; sourceTree = "<group>"; };
+		132CCF6A29FC0B8900F1C877 /* GoogleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdapter.swift; sourceTree = "<group>"; };
+		132CCF6C29FC0B9900F1C877 /* TwitterAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +69,33 @@
 				132CCF4D29FC06F500F1C877 /* AppDelegate.swift */,
 				132CCF4F29FC06F500F1C877 /* SceneDelegate.swift */,
 				132CCF5129FC06F500F1C877 /* ViewController.swift */,
+				132CCF6829FC0B6C00F1C877 /* Adapters */,
+				132CCF6529FC09FF00F1C877 /* Auth */,
 				132CCF5329FC06F500F1C877 /* Main.storyboard */,
 				132CCF5629FC06F900F1C877 /* Assets.xcassets */,
 				132CCF5829FC06F900F1C877 /* LaunchScreen.storyboard */,
 				132CCF5B29FC06F900F1C877 /* Info.plist */,
 			);
 			path = Adapter2;
+			sourceTree = "<group>";
+		};
+		132CCF6529FC09FF00F1C877 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				132CCF6629FC0A3400F1C877 /* Auth Service.swift */,
+				132CCF6129FC079400F1C877 /* Google Authenticator.swift */,
+				132CCF6329FC09CB00F1C877 /* Twitter Authenticator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		132CCF6829FC0B6C00F1C877 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				132CCF6A29FC0B8900F1C877 /* GoogleAdapter.swift */,
+				132CCF6C29FC0B9900F1C877 /* TwitterAdapter.swift */,
+			);
+			name = Adapters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132CCF6429FC09CB00F1C877 /* Twitter Authenticator.swift in Sources */,
 				132CCF5229FC06F500F1C877 /* ViewController.swift in Sources */,
+				132CCF6B29FC0B8900F1C877 /* GoogleAdapter.swift in Sources */,
+				132CCF6D29FC0B9900F1C877 /* TwitterAdapter.swift in Sources */,
+				132CCF6729FC0A3400F1C877 /* Auth Service.swift in Sources */,
+				132CCF6229FC079400F1C877 /* Google Authenticator.swift in Sources */,
 				132CCF4E29FC06F500F1C877 /* AppDelegate.swift in Sources */,
 				132CCF5029FC06F500F1C877 /* SceneDelegate.swift in Sources */,
 			);
